@@ -6,13 +6,13 @@ export const Navbar = () => {
         <nav className='navbar'>
         <ul>
           <li>
-            <Link to="/">Characters</Link>
+            <Link to="/rick-and-morty">Characters</Link>
           </li>
           <li>
-            <Link to="/episodes">Episodes</Link>
+            <Link to="/rick-and-morty/episodes">Episodes</Link>
           </li>
           <li>
-            <Link to="/locations">Locations</Link>
+            <Link to="/rick-and-morty/locations">Locations</Link>
           </li>
         </ul>
       </nav>

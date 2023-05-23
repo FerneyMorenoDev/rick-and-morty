@@ -38,11 +38,11 @@ const router = createBrowserRouter([
 
 const routerEle = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App />} errorElement={<ErrorPage />}>
-      <Route path='/' element={<CharactersPage />}/>
-      <Route path='/characters/:characterId/' element={<CharacterProfilePage />}/>
-      <Route path='/episodes' element={<EpisodesPage />}/>
-      <Route path='/locations' element={<div>These are the locations</div>}/>
+    <Route path='/rick-and-morty' element={<App />} errorElement={<ErrorPage />}>
+      <Route path='/rick-and-morty' element={<CharactersPage />}/>
+      <Route path='/rick-and-morty/characters/:characterId/' element={<CharacterProfilePage />}/>
+      <Route path='/rick-and-morty/episodes' element={<EpisodesPage />}/>
+      <Route path='/rick-and-morty/locations' element={<div>These are the locations</div>}/>
     </Route>
   )
 );

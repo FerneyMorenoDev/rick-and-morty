@@ -28,7 +28,7 @@ export const CharacterActions = ({ characterId, className = '' }: CharacterActio
 
     return (
         <div className={`character-actions ${className}`}>
-            <Link to={`/characters/${characterId}`}>
+            <Link to={`/rick-and-morty/characters/${characterId}`}>
                 <button className="character-actions__btn character-actions__profile-btn"><BsPersonFill /></button>
             </Link>
             <button className={`character-actions__btn character-actions__${addRemove}-btn`} onClick={handleAddRemoveCharacter}>
