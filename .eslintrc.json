@@ -1,0 +1,16 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": "eslint:recommended",
+    "overrides": [{
+        "files": ["*.tsx", "*.ts"],
+        "rules": {
+            "no-undef": "off"
+        }
+    }],
+    "rules": {
+        "quotes": [2, "single"],
+        "no-extra-semi": "error",
+        "semi": ["error", "always"]
+    }
+}

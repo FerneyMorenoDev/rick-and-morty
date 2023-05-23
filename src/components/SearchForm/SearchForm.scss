@@ -1,0 +1,36 @@
+.search-form {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        width: 80%;
+        border: 1px solid #a9d3e9;
+        outline: none;
+    }
+
+    &__button {
+        width: 20%;
+        border: 1px solid transparent;
+        background-color: #a9d3e9;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #a9d3e9;
+            background-color: white;
+        }
+    }
+
+    &__input,
+    &__button {
+        padding: 5px;
+    }
+}

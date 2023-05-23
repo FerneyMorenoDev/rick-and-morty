@@ -1,0 +1,87 @@
+.summary-character-card {
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    border: 1px solid #a3a3a3;
+    position: relative;
+    background-color: #ffffff;
+    place-self: center;
+
+    &--Human {
+        border: 1px solid #ffdc83;
+
+        &__title {
+            &:after {
+                background-color: #ffdc83;
+            }
+        }
+    }
+    
+    &--Alien {
+        border: 1px solid #5fd6c7;
+
+        &__title {
+            &:after {
+                background-color: #5fd6c7;
+            }
+        }
+    }
+
+    &--Humanoid {
+        border: 1px solid #ca8eac;
+
+        &__title {
+            &:after {
+                background-color: #ca8eac;
+            }
+        }
+    }
+
+    &--Robot {
+        border: 1px solid #a3a3a3;
+
+        &__title {
+            &:after {
+                background-color: #a3a3a3;
+            }
+        }
+    }
+
+    &--Animal {
+        border: 1px solid #ffa963;
+
+        &__title {
+            &:after {
+                background-color: #ffa963;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__title {
+        margin: 10px 0 5px;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+
+        &:after {
+            content: '';
+            display: block;
+            margin: 10px auto 5px;
+            width: 15%;
+            height: 1px;
+        }
+    }
+
+    &__extra {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,118 @@
+
+.info-emoji {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+
+    span {
+        background-color: #a3a3a3;
+    }
+
+    span:nth-child(1) {
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    span:nth-child(2) {
+        background: none;
+        font-size: 12px;
+    }
+
+    &--small {
+        span:nth-child(1) {
+            width: 40px;
+            height: 40px;
+        }
+    
+        span:nth-child(2) {
+            font-size: 12px;
+        }
+    }
+
+    &--medium {
+        span:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 30px;
+        }
+    
+        span:nth-child(2) {
+            font-size: 14px;
+        }
+    }
+
+    &--big {
+        span:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            font-size: 24px;
+        }
+    
+        span:nth-child(2) {
+            font-size: 16px;
+        }
+    }
+    
+    &-status {}
+    
+    &--Alive {
+        span {
+            background-color: #89e089;
+        }
+    }
+    
+    &--Dead {
+        span {
+            background-color: #8a87fb;
+        }
+    }
+    
+    &--species {}
+    
+    &--Human {
+        span {
+            background-color: #ffdc83;
+        }
+    }
+    
+    &--Alien {
+        span {
+            background-color: #5fd6c7;
+        }
+    }
+    
+    &--Humanoid {
+        span {
+            background-color: #ca8eac;
+        }
+    }
+    
+    &--Robot {
+        span {
+            background-color: #a3a3a3;
+        }
+    }
+    
+    &--Animal {
+        span {
+            background-color: #ffa963;
+        }
+    }
+    
+    &--Male {
+        span {
+            background-color: #AFD3E2;
+        }
+    }
+    
+    &--Female {
+        span {
+            background-color: #B799FF;
+        }
+    }
+}
