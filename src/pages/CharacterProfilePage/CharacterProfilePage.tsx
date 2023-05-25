@@ -3,7 +3,7 @@ import { charactersState } from '../../interfaces/features/characters';
 import { useSelector } from 'react-redux';
 import { Section } from '../../components/Section';
 // import { Heading } from '../../components/Heading';
-import { ProfileCharacterCard } from '../../components/ProfileCharacterCard/ProfileCharacterCard';
+import { CharacterProfileCard } from '../../components/CharacterProfileCard/CharacterProfileCard';
 
 export const CharacterProfilePage = () => {
     const { characterId } = useParams();
@@ -16,7 +16,7 @@ export const CharacterProfilePage = () => {
     console.log('character', character);
     return (
         <Section className='character-profile'>
-            <ProfileCharacterCard {...characterData}/>
+            <CharacterProfileCard {...characterData}/>
         </Section>
     );
 };

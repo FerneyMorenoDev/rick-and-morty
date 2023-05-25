@@ -10,7 +10,7 @@ import { SearchForm } from '../SearchForm/SearchForm';
 import { ChangeEventType, SubmitEventType } from '../../types/Common';
 import { charactersState } from '../../interfaces/features/characters';
 import { CharacterList } from './CharactersList';
-import { SummaryCharacterCard } from '../SummaryCharacterCard/SummaryCharacterCard';
+import { CharacterSummaryCard } from '../CharacterSummaryCard/CharacterSummaryCard';
 
 export const Characters = (): JSX.Element => {
     const [characterId, setCharacterId] = useState<string>('');
@@ -74,7 +74,7 @@ export const Characters = (): JSX.Element => {
                 )}
 
                 {!isFetching && !_.isEmpty(character) && (
-                    <SummaryCharacterCard {...character} isError={isError} />
+                    <CharacterSummaryCard {...character} isError={isError} />
                 )}
             </Section>
             <CharacterList
@@ -82,7 +82,7 @@ export const Characters = (): JSX.Element => {
             >
                 {!isListCharactersEmpty ? (
                     charactersList.map((character: any) => (
-                        <SummaryCharacterCard key={character.id} {...character} />
+                        <CharacterSummaryCard key={character.id} {...character} />
                     ))
                 ) : (
                     <div>Characters not added yet</div>

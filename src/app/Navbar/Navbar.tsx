@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.scss';
 
 export const Navbar = () => {
@@ -6,13 +6,16 @@ export const Navbar = () => {
         <nav className='navbar'>
         <ul>
           <li>
-            <Link to="/rick-and-morty">Characters</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/rick-and-morty/episodes">Episodes</Link>
+            <NavLink to="/characters">Characters</NavLink>
           </li>
           <li>
-            <Link to="/rick-and-morty/locations">Locations</Link>
+            <NavLink to="/episodes">Episodes</NavLink>
+          </li>
+          <li>
+            <NavLink to="/locations">Locations</NavLink>
           </li>
         </ul>
       </nav>

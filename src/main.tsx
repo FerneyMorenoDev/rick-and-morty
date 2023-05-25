@@ -10,39 +10,40 @@ import { store } from './app/store';
 import { Provider } from 'react-redux';
 import { EpisodesPage } from './pages/EpisodesPage/EpisodesPage';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: '/',
-        element: <CharactersPage />,
-      },
-      {
-        path: '/characters/:characterId/',
-        element: <CharacterProfilePage />,
-      },
-      {
-        path: '/episodes',
-        element: <EpisodesPage />,
-      },
-      {
-        path: '/locations',
-        element: <div>These are the locations</div>,
-      }
-    ]
-  }
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App />,
+//     errorElement: <ErrorPage />,
+//     children: [
+//       {
+//         path: '/',
+//         element: <CharactersPage />,
+//       },
+//       {
+//         path: '/characters/:characterId/',
+//         element: <CharacterProfilePage />,
+//       },
+//       {
+//         path: '/episodes',
+//         element: <EpisodesPage />,
+//       },
+//       {
+//         path: '/locations',
+//         element: <div>These are the locations</div>,
+//       }
+//     ]
+//   }
+// ]);
 
 const routerEle = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/rick-and-morty' element={<App />} errorElement={<ErrorPage />}>
-      <Route path='/rick-and-morty' element={<CharactersPage />}/>
-      <Route path='/rick-and-morty/characters/:characterId/' element={<CharacterProfilePage />}/>
-      <Route path='/rick-and-morty/episodes' element={<EpisodesPage />}/>
-      <Route path='/rick-and-morty/locations' element={<div>These are the locations</div>}/>
+    <Route path='/' element={<App />} errorElement={<ErrorPage />}>
+      <Route path='/' element={<div>HOME</div>}/>
+      <Route path='/characters' element={<CharactersPage />}/>
+      <Route path='/characters/:characterId/' element={<CharacterProfilePage />}/>
+      <Route path='/episodes' element={<EpisodesPage />}/>
+      <Route path='/locations' element={<div>These are the locations</div>}/>
     </Route>
   )
 );

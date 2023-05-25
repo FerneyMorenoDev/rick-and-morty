@@ -1,6 +1,10 @@
-.episodes-page {
+.episodes {
     h1 {
         text-align: center;
         margin-bottom: 50px;
+    }
+
+    &__content {
+        display: flex;
     }
 }

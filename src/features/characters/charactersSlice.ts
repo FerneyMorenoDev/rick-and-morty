@@ -20,7 +20,7 @@ const charactersSlice = createSlice({
     reducers: {
         addToList(state, action) {
             const isCharacterAdded = state.charactersList.find((character) => character.id === action.payload);
-            if (!isCharacterAdded) state.charactersList.push(state.character);
+            if (!isCharacterAdded) state.charactersList.unshift(state.character);
         },
         removeFromList(state, action) {
             state.charactersList = state.charactersList.filter((character) => character.id !== action.payload);

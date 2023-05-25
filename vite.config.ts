@@ -9,5 +9,5 @@ export default defineConfig({
     checker({
       typescript: true,
     })],
-    base: '/rick-and-morty/'
+    // base: '/rick-and-morty'
 });

@@ -3,9 +3,9 @@ import { formatDate, formatEpisode } from '../../utils';
 import { Heading } from '../Heading';
 import { InfoEmoji } from '../InfoEmoji/InfoEmoji';
 import { Section } from '../Section';
-import './ProfileCharacterCard.scss';
+import './CharacterProfileCard.scss';
 
-export const ProfileCharacterCard = ({
+export const CharacterProfileCard = ({
     image,
     name,
     episode,
@@ -18,25 +18,25 @@ export const ProfileCharacterCard = ({
     created,
 }: characterState): JSX.Element => {
     return (
-        <Section className={`profile-character-card profile-character-card--${species}`}>
-            <Section className='profile-character-card__details'> 
+        <Section className={`character-profile-card character-profile-card--${species}`}>
+            <Section className='character-profile-card__details'> 
                 <img src={image}/>
-                <div className='profile-character-card__info'>
-                    <Heading className='profile-character-card__title'>
+                <div className='character-profile-card__info'>
+                    <Heading className='character-profile-card__title'>
                         {name}
                         <span>{type || 'unknown'}</span>    
                     </Heading>
-                    <span className='profile-character-card__date'>
+                    <span className='character-profile-card__date'>
                         Created on: {formatDate(created)}
                     </span>
-                    <div className='profile-character-card__emojis'>
+                    <div className='character-profile-card__emojis'>
                         <InfoEmoji size='medium' status={status} />
                         <InfoEmoji size='medium' species={species} />
                         <InfoEmoji size='medium' gender={gender} />
                     </div>
                 </div>
             </Section>
-            <Section className='profile-character-card__extra'>
+            <Section className='character-profile-card__extra'>
                 <Section>
                     <Heading>Episodes</Heading>
                     <ul>
