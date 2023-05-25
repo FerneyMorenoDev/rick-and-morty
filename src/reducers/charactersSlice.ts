@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { charactersState } from '../../interfaces/features/characters';
+import { charactersState } from '../interfaces/features/characters';
 
 const initialState: charactersState = {
     character: {},
@@ -7,6 +7,18 @@ const initialState: charactersState = {
     status: 'idle',
     error: null,
 };
+
+// Old way
+// const fetchCharacterById = (id: string) => {
+//     return async (dispatch: any, getState: any) => {
+//         try {
+//             const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+//             dispatch(response);
+//         } catch (err) {
+//             console.log(err);
+//         }
+//     };
+// };
 
 export const fetchCharacter = createAsyncThunk('characters/fetchCharacter', async (id: string) => {
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);

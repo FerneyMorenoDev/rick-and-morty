@@ -1,8 +1,18 @@
 import { configureStore } from '@reduxjs/toolkit';
-import charactersReducer from '../features/characters/charactersSlice';
-import episodesReducer from '../features/episodes/episodesSlice';
+import charactersReducer from '../reducers/charactersSlice';
+import episodesReducer from '../reducers/episodesSlice';
 
-export const store =  configureStore({
+// option with combine reducers
+// const rootReducer = combineReducers({
+//     characters: charactersReducer,
+//     episodes: episodesReducer,
+// });
+
+// export const store = configureStore({
+//     reducer: rootReducer,
+// });
+
+export const store = configureStore({
     reducer: {
         characters: charactersReducer,
         episodes: episodesReducer,

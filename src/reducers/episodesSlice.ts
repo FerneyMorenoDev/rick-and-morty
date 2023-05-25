@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { episodesState } from '../../interfaces/features/episodes';
+import { episodesState } from '../interfaces/features/episodes';
 
 const initialState: episodesState = {
     episode: {},
